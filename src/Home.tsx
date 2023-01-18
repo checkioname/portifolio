@@ -92,7 +92,8 @@ export function Home() {
             </ul>
           </section>
           <section className="border border-indigo-900 p-6 m-8">
-            Section Content
+            Hello there, my name is Lucas, i'm a 19 year old brazilian developer, i like basketball, coffee and programming
+            I have a lot of interest in the open-source community, GNU and Free Software Movement
           </section>
         </div>
       </div>
