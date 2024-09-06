@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    width: 32vw;
+    padding: 30px 24px 53px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 191px;
+    
+    border-radius: 20px;
+    background-color: #abd6fd;
+    margin-top: 10px;
+
+}  

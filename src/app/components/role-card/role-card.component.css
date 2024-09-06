@@ -1,0 +1,34 @@
+.container {
+    width: 49vw;
+    height: 50vh;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+
+ .card-text {
+   font-family: "Questrial", sans-serif; 
+   font-size: 46px; 
+   font-style: normal;
+   font-weight: 300;
+   position: relative;
+   padding-right: 40px;
+ }
+
+b {
+    font-weight: 900;
+}
+
+
+ img {
+    width: 100px;
+    transform: scaleY(-1);
+    padding-right: 20px;
+    opacity: 60%; 
+
+ }
