@@ -1,9 +1,8 @@
 name: Deploy Angular App
 
 on:
-  push:
-    branches:
-      - angular-portifolio  # Execute o workflow quando houver um push na branch 'main'
+  branches:
+    - angular-portifolio  # Execute o workflow quando houver um push na branch 'main'
 
 jobs:
   build-and-deploy:
@@ -18,14 +17,13 @@ jobs:
         with:
           node-version: '18'  # Especifique a versão do Node.js que seu projeto requer
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build Angular app
-        run: npm run build:prod  # Gera a build otimizada do Angular para produção
+      - name: Install dependencies & deploy
+        run: npm install && npm run build:prod
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/portifolio # Altere para o nome correto da pasta de build do seu projeto Angular
+          folder: dist/portifolio
+          BASE_BRANCH: angular-portifolio
+          branch: prod  
+          token: ${{ secrets.GH_TOKEN }}
