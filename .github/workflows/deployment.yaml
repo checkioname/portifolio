@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Build Angular app
-        run: npm run build -- --prod  # Gera a build otimizada do Angular para produção
+        run: npm run build:prod  # Gera a build otimizada do Angular para produção
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
