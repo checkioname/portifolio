@@ -25,6 +25,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist/
-          BASE_BRANCH: angular-portifolio
           branch: prod  
           token: ${{ secrets.GH_TOKEN }}
