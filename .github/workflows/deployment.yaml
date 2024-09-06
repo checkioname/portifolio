@@ -1,8 +1,9 @@
 name: Deploy Angular App
 
 on:
-  branches:
-    - angular-portifolio  # Execute o workflow quando houver um push na branch 'main'
+  push:
+    branches:
+      - angular-portifolio  # Execute o workflow quando houver um push na branch 'main'
 
 jobs:
   build-and-deploy:
