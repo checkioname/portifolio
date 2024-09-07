@@ -1,4 +1,5 @@
-<div class="my-container">
+<div class="my-container" #resizableElement>
     <img src="https://i.pinimg.com/474x/d8/26/92/d82692825d1ee6139927b0f56947eb52.jpg" >
+    <div class="resize-handle" (mousedown)="onResizeMouseDown($event)"> </div>
 </div>
 

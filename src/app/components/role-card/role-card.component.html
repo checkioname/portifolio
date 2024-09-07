@@ -1,8 +1,8 @@
-<div class="container">
+<div class="container" #resizableElement>
 
     <img src="https://miro.medium.com/v2/resize:fit:400/0*rTmSQjlQG_kGTUfR." > 
     
     <p class="card-text"><b>Software Engineer</b> & <br> AI Enthusiast</p>
-
+    <div class="resize-handle" (mousedown)="onResizeMouseDown($event)"></div>
 </div>
 

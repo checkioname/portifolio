@@ -1,13 +1,30 @@
 <app-header-component></app-header-component>
 
-<div style="display: flex; flex-direction: column;">
-    <div style="display: flex;">
-        <app-role-card></app-role-card>
-        <app-pictures></app-pictures>
+<div class="wrapper">
+        <app-role-card style="grid-area: role;"></app-role-card>
+        <app-pictures style="grid-area: picture;"></app-pictures>
+        <app-about-me style="grid-area: about;"></app-about-me>
+        <app-contact-me style="grid-area: contact;"></app-contact-me>
     </div>
-    <div style="display: flex;">
-        <app-about-me></app-about-me>
-        <app-contact-me></app-contact-me>
-    </div>
-   </div>
+    <app-list style="grid-area: list;"></app-list>
 <router-outlet />
+
+
+<style>
+
+.wrapper {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+
+    /* flex-direction: column;
+    grid-template-areas:
+        "role  role  role    picture list"
+        "about about contact contact list";
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px */
+}
+
+</style>

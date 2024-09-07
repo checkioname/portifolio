@@ -2,12 +2,13 @@
     display: inline-flex;
     padding: 32px 128px 46px 24px;
     flex-direction: column;
-    width: 20vw;
+    width: 27vw;
+    height: 60px;
     align-items: flex-start;
-    gap: 85px;
+    gap: 70px;
     background-color: aliceblue;
     border-radius: 20px;
-    margin: 10px;
+    position: relative;
 }
 
 p {

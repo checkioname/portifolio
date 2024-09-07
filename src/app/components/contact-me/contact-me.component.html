@@ -1,4 +1,5 @@
-<div class="container">
+<div class="container" #resizableElement>
     <p>contact me</p>
+    <div class="resize-handler" (mousedown)="onResizeMouseDown($event)"></div>
 </div>
 
